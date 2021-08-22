@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>DOB</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class=age>
+            <input type="date" id="dob"/>
+            <input type="submit" value="calculate Age" 
+            onclick="calculateage()">
+
+        </div>
+        <p id="demo"></p>
+        
+    </body>
+    <script>
+        function calculateage(){
+        var inputage=document.getElementById('dob').value;
+        var userdate=Date.parse(inputage);
+        var nd=Date.now();
+
+        var age=nd-userdate;
+
+        var minutes= 1000*60;
+        var hours= minutes*60;
+        var days= hours*24;
+        var years=days*365;
+
+        var yy=Math.round(age/years);
+        var month=yy*12;
+        var day= yy*365;
+        var hour=Math.round(age/hours);
+        
+        
+        document.getElementById('demo').innerHTML="Age  - "+yy+"<br> <br>Month  -"+month+"<br><br>Days " +day+"<br><br>Hours  -"+hour;
+        
+    
+    }
+
+        
+    </script>
+
+
+
+</html>

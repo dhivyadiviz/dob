@@ -1,0 +1,25 @@
+.age
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 249, 249);
+    margin: auto 200px;
+}
+input {
+    border-radius: 5px;
+    height:50px;
+    border-color: rgb(43, 6, 30);
+    outline-color: rgb(46, 2, 40);
+    background-color: rgb(108, 196, 26);
+    color:white;
+    font-style: oblique;
+    font-size: 20px;
+
+
+}
+ p{
+     text-align: center;
+     color:darkgreen;
+
+}
